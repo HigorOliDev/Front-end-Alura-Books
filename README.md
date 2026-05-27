@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Alura Books
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto Frontend em React para exibir livros, com busca e seção de últimos lançamentos.
 
-## Available Scripts
+## Tecnologias
 
-In the project directory, you can run:
+- React
+- styled-components
+- React Router DOM
+- Axios
+- React Scripts
 
-### `npm start`
+## Visão geral
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O app possui uma tela com:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- cabeçalho (`Header`)
+- campo de pesquisa de livros (`Pesquisa`)
+- lista de resultados de busca
+- seção de últimos lançamentos (`UltimosLancamentos`)
 
-### `npm test`
+## Estrutura principal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/App.js` - componente principal
+- `src/componentes/Pesquisa` - busca de livros
+- `src/componentes/UltimosLancamentos` - seção de lançamentos
+- `src/componentes/Header` - cabeçalho
+- `src/componentes/Input` - campo de texto reutilizável
+- `src/componentes/CardRecomenda` - cards de recomendações
+- `src/componentes/Titulo` - títulos estilizados
 
-### `npm run build`
+## Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone o repositório:
+````
+git clone https://github.com/HigorOliDev/Front-end-Alura-Books.git
+````
+Abra o terminal na pasta do projeto e execute:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Uso
 
-### `npm run eject`
+Para iniciar o app em modo de desenvolvimento:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Abra `http://localhost:3000` no navegador.
